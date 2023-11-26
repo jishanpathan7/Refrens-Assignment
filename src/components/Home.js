@@ -64,7 +64,7 @@ const Home = () => {
             loader={<h4>Loading...</h4>}
             className={`infiniteContainer`}
           >
-            {loading ? (
+            {loading && search ? (
               <div className="spinner-border text-success" role="status">
               <span className="visually-hidden text-success">Loading...</span>
             </div>
